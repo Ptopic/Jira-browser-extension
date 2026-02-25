@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --white: 255 255 255;
+
+    --gray-50: 252 252 252;
+    --gray-100: 248 249 250;
+    --gray-200: 244 245 246;
+    --gray-300: 238 239 241;
+    --gray-400: 221 224 227;
+    --gray-500: 104 112 118;
+    --gray-900: 32 41 56;
+
+    --blue-400: 96 165 250;
+    --blue-500: 59 130 246;
+    --blue-800: 22 35 63;
+    --blue-900: 18 30 53;
+
+    --red-600: 220 38 38;
+    --green-500: 34 197 94;
+    --green-600: 22 163 74;
+    --amber-500: 245 158 11;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-gray-400;
+  }
+
+  body {
+    @apply bg-gray-50 text-gray-900;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
